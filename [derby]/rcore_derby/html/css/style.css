@@ -1,0 +1,57 @@
+*{
+	color: black;
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.currentScore{
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-size: 35px;
+    text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+	height: auto;
+    width: 170px;
+    margin: auto;
+    text-align: center;
+    background: #0000002e;
+    padding-bottom: 10px;
+    padding-top: 10px;
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.containerKillDisplay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.containerKillDisplay img{
+    display: block;
+    margin: auto;
+    max-width: 618px;
+}
+
+
+.toAddScore{
+	-webkit-transition: color 3s, font-size 3s;
+   -moz-transition: color 3s, font-size 3s;
+     -o-transition: color 3s, font-size 3s;
+        transition: color 3s, font-size 3s;
+	
+	padding: 7px;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    font-size: 120px;	
+	color:#73ff73;
+	text-shadow: #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 5px;
+}
