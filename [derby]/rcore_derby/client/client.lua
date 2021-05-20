@@ -196,11 +196,8 @@ end)
 
 -- Controls who actually push who off the cliff (Code by TEB from five-dev.cz)
 CreateThread(function()
-    -- we will save player ID here so it wont get called 10 times for same player
-    -- will save server performance
-    local savedEnemyID, beforeEnemyID = 0, 1
     while true do
-        Wait(100)
+        Wait(200)
         if ArenaBusy then
             local ped = PlayerPedId()
             local veh = GetVehiclePedIsIn(ped, false)
@@ -215,11 +212,8 @@ CreateThread(function()
 
                 if hit > 0 and entityHit > 0 then
                     local driverPed = GetPedInVehicleSeat(entityHit, -1)
-                    savedEnemyID = _GetPlayerServerID(driverPed)
-                    if savedEnemyID ~= beforeEnemyID then
-                        beforeEnemyID = _GetPlayerServerID(driverPed)
-                        TriggerServerEvent("rcore_derby:SetPlayerHit", _GetPlayerServerID(driverPed))
-                    end
+                    -- this isnt best practise but i am too lazy to make better one.
+                    TriggerServerEvent("rcore_derby:SetPlayerHit", _GetPlayerServerID(driverPed))
                 end
             end
         else
