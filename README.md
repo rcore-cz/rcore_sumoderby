@@ -2,7 +2,7 @@
 # rcore_sumoderby
 
 Preview: 
-https://www.youtube.com/watch?v=0k2wwr-5FWI&feature=youtu.be&ab_channel=rcore
+https://www.youtube.com/watch?v=IPGSaDbL5iU
 
 Beer, girls, cars, roaring engines, loud music. The sweet basics of every car derby. You wish to challenge your friends or foes in free-for-all car derby? Now you have your chance! Place bets, buckle up and let's go smash some cars. Six players can enter, only one will become a champion of sumo-derby.
 
